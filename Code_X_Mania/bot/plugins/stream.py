@@ -10,7 +10,7 @@ from Code_X_Mania.vars import Var
 from pyrogram import filters, Client
 from pyrogram.errors import FloodWait, UserNotParticipant
 from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton
-db = Database(Var.DATABASE_URL, Var.SESSION_NAME)
+db = Database(Var.DATABASE_URL, Var.SESSION_STRING)
 
 
 MY_PASS = os.environ.get("MY_PASS",None)
