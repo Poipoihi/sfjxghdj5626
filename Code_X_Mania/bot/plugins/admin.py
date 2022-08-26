@@ -12,7 +12,7 @@ from Code_X_Mania.bot import StreamBot
 from Code_X_Mania.vars import Var
 from pyrogram import filters, Client
 from pyrogram.types import Message
-db = Database(Var.DATABASE_URL, Var.SESSION_NAME)
+db = Database(Var.DATABASE_URL, Var.SESSION_STRING)
 broadcast_ids = {}
 
 @StreamBot.on_message(filters.command("users") & filters.private & ~filters.edited)
