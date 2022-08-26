@@ -9,7 +9,7 @@ from Code_X_Mania.utils.database import Database
 from pyrogram import filters
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 from pyrogram.errors import UserNotParticipant
-db = Database(Var.DATABASE_URL, Var.SESSION_NAME)
+db = Database(Var.DATABASE_URL, Var.SESSION_STRING)
 
 from pyrogram.types import ReplyKeyboardMarkup
 
